@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="16dp">
+
+    <ImageView
+        android:id="@+id/drawer_item_image"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/maps_icon"/>
+
+    <TextView
+        android:id="@+id/drawer_item_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/drawer_item_image"
+        android:layout_alignTop="@+id/drawer_item_image"
+        android:layout_marginLeft="10dp"
+        android:textSize="20dp"
+        android:textColor="@color/black"
+        android:text="TITLE"/>
+
+    <TextView
+        android:id="@+id/drawer_item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/drawer_item_title"
+        android:layout_alignLeft="@+id/drawer_item_title"
+        android:textSize="16dp"
+        android:textColor="@color/secondary_color"
+        android:text="DESCRIPTION"/>
+</RelativeLayout>

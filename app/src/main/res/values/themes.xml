@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- the theme applied to the application or activity -->
+
+    <style name="StickylistStyle"
+           parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="android:paddingLeft">@dimen/stickylist_vertical_padding</item>
+        <item name="android:paddingRight">@dimen/stickylist_horizontal_padding</item>
+        <item name="android:layout_marginLeft">@dimen/stickylist_vertical_padding</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:background">#eeeeef</item>
+
+    </style>
+</resources>

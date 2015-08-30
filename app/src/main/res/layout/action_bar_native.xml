@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    This view was a replacement candidate to action_bar.xml.
+    Unlike action_bar.xml, it tries to replace the action bar provided by the
+    native theme directly instead of manually creating and inflating an action bar
+    in each activity xml.
+    This XML is currently not in use since it did not make it into the stable release.
+-->
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:local="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbar"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:minHeight="?attr/actionBarSize"
+    android:background="#fff"
+    local:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+    local:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+    >
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar_layout"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:gravity="left|center_vertical"
+        android:weightSum="1">
+
+
+        <ImageView
+            android:id="@+id/logo_settings"
+            android:src="@drawable/meny_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_weight="0.03"
+
+            />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/sats_logo"
+            android:padding="3dp"
+            android:layout_margin="3dp"
+            android:layout_weight="0.1"/>
+
+        <TextView
+            android:id="@+id/text_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/logo_image"
+            android:text="MIN TRÄNING"
+            android:textColor="#F000"
+            android:layout_weight="0.6"/>
+
+
+        <ImageView
+            android:id="@+id/logo_refresh"
+            android:src="@drawable/refresh_icon"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_weight="0.25" />
+
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

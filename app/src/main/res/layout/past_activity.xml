@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:id="@+id/past_activity_container"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="80dp">
+
+    <ImageView
+        android:id="@+id/past_activity_image"
+        android:layout_height="40dp"
+        android:layout_width="70dp"
+        android:src="@drawable/all_training_icons"
+        android:layout_centerVertical="true">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/past_activity_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:text="Sats Core"
+        android:layout_toRightOf="@+id/past_activity_image"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/past_activity_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/secondary_color"
+        android:textStyle="bold"
+        android:text="Fredag 14/3"
+        android:elegantTextHeight="false"
+        android:layout_below="@+id/past_activity_name"
+        android:layout_alignWithParentIfMissing="false"
+        android:layout_alignParentTop="false"
+        android:layout_alignParentBottom="false"
+        android:layout_alignParentLeft="false"
+        android:layout_alignParentRight="false"
+        android:layout_toRightOf="@+id/past_activity_image"
+        />
+
+    <ImageView
+        android:id="@+id/past_activity_comment_image"
+        android:layout_height="10dp"
+        android:layout_width="10dp"
+        android:src="@drawable/ic_comment"
+        android:layout_below="@+id/past_activity_date"
+        android:layout_toRightOf="@+id/past_activity_image"
+        android:layout_marginTop="5sp"
+        android:layout_marginRight="5sp">
+    </ImageView>
+
+    <TextView
+        android:id="@+id/past_activity_comment_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:textColor="@color/secondary_color"
+        android:textStyle="bold"
+        android:text="Lägg till kommentar"
+        android:elegantTextHeight="false"
+        android:layout_toRightOf="@+id/past_activity_comment_image"
+        android:layout_alignParentBottom="false"
+        android:layout_alignBottom="@+id/past_activity_comment_image"/>
+
+
+    <TextView
+        android:id="@+id/past_activity_checkmark_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:textColor="@color/primary_color"
+        android:textStyle="bold"
+        android:text="Avklarat?"
+        android:elegantTextHeight="false"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_gravity="center"
+        android:layout_centerVertical="true"
+        android:paddingRight="20dp"
+        android:paddingLeft="10dp"/>
+    <ImageView
+        android:id="@+id/past_activity_checkmark_image"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:src="@drawable/checkmark_button_normal"
+        android:layout_gravity="center"
+        android:layout_toLeftOf="@+id/past_activity_checkmark_text"
+        android:layout_alignParentEnd="false"
+        android:layout_alignParentRight="false"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>

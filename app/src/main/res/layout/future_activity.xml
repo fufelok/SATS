@@ -1,0 +1,237 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:id="@+id/future_activity_container"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="#fcfefd"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="2dp"
+        android:layout_marginBottom="@dimen/stickylist_horizontal_padding"
+        android:layout_marginLeft="@dimen/stickylist_horizontal_padding"
+        android:layout_marginRight="@dimen/stickylist_vertical_padding"
+        android:layout_marginTop="@dimen/stickylist_horizontal_padding"
+        android:background="@drawable/shape">
+
+        <TextView
+            android:id="@+id/future_activity_hour_text"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/clock_background"
+            android:gravity="center"
+            android:text="10"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:id="@+id/future_activity_minute_text"
+            android:layout_width="37dp"
+            android:layout_height="37dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/future_activity_hour_text"
+            android:background="@drawable/clock_background"
+            android:gravity="center"
+            android:text="25"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/white"
+            android:textSize="28dp"/>
+
+        <TextView
+            android:id="@+id/future_activity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/future_activity_minute_text"
+            android:text="SATS CORE"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/primary_color"
+            android:textIsSelectable="false"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/future_activity_region"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_name"
+            android:layout_marginLeft="6dp"
+            android:layout_toRightOf="@+id/future_activity_minute_text"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Hornstull"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondary_color"
+            android:textSize="12dp"
+            android:typeface="normal"/>
+
+        <TextView
+            android:id="@+id/future_activity_instructor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_region"
+            android:layout_marginLeft="4dp"
+            android:layout_toRightOf="@+id/future_activity_minute_text"
+            android:text="Sven Svensson"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/secondary_color"
+            android:textSize="12dp"/>
+
+        <ImageView
+            android:id="@+id/future_activity_duration_image"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_hour_text"
+            android:layout_marginTop="4dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_time"
+            android:layout_marginLeft="10dp" />
+
+        <TextView
+            android:id="@+id/future_activity_duration_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_hour_text"
+            android:layout_marginTop="4dp"
+            android:layout_toRightOf="@+id/future_activity_duration_image"
+            android:text="30 min"
+            android:textColor="@color/secondary_color"
+            android:paddingLeft="2dp"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/future_activity_button_cancel"
+            android:layout_width="80dp"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="6dp"
+            android:background="@drawable/progressbar_nmi_primary"
+            android:text="Avboka"
+            android:textColor="@color/white"
+            android:textSize="12dp"
+            android:layout_alignBottom="@+id/future_activity_minute_text"
+            android:layout_alignTop="@+id/future_activity_name" />
+
+        <TextView
+            android:id="@+id/future_activity_que_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/future_activity_button_cancel"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="6dp"
+            android:paddingRight="10dp"
+            android:paddingTop="10dp"
+            android:text="20"
+            android:textColor="@color/pink"
+            android:textSize="18dp"
+            android:textStyle="bold"/>
+
+        <ImageView
+            android:id="@+id/future_activity_que_image"
+            android:layout_width="16dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="false"
+            android:layout_alignParentRight="false"
+            android:layout_below="@+id/future_activity_button_cancel"
+            android:layout_toLeftOf="@+id/future_activity_que_text"
+            android:background="@android:color/transparent"
+            android:backgroundTint="@color/white"
+            android:paddingTop="10dp"
+            android:src="@drawable/icon_queue"/>
+
+
+        <View
+            android:id="@+id/future_activity_separator"
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_below="@+id/future_activity_duration_image"
+            android:layout_marginTop="20dp"
+            android:background="@color/third_color"/>
+
+        <ImageView
+            android:id="@+id/future_activity_calendar_image"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/future_activity_separator"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="5dp"
+            android:adjustViewBounds="false"
+            android:baselineAlignBottom="false"
+            android:cropToPadding="false"
+            android:focusable="false"
+            android:padding="5dp"
+            android:src="@drawable/ic_calender"
+            android:layout_marginLeft="20dp" />
+
+        <TextView
+            android:id="@+id/future_activity_calendar_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_separator"
+            android:layout_marginTop="10dp"
+            android:layout_toEndOf="@+id/future_activity_calendar_image"
+            android:layout_toRightOf="@+id/future_activity_calendar_image"
+            android:text="Lägg till i kalendern"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/secondary_color"
+            android:textSize="12dp"/>
+
+
+        <View
+            android:id="@+id/future_activity_separator2"
+            android:layout_width="1dp"
+            android:layout_height="35dp"
+            android:layout_alignTop="@+id/future_activity_separator"
+            android:layout_centerHorizontal="true"
+            android:background="@color/third_color"/>
+
+
+        <ImageView
+            android:id="@+id/future_activity_workout_image"
+            android:layout_width="30dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/future_activity_separator"
+            android:layout_gravity="top"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:layout_toEndOf="@+id/future_activity_separator2"
+            android:layout_toRightOf="@+id/future_activity_separator2"
+            android:padding="5dp"
+            android:src="@drawable/ic_more"/>
+
+        <TextView
+            android:id="@+id/future_activity_workout_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/future_activity_separator"
+            android:layout_below="@+id/future_activity_workout_image"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="12dp"
+            android:layout_toEndOf="@+id/future_activity_workout_image"
+            android:layout_toRightOf="@+id/future_activity_workout_image"
+            android:text="Mer om passet"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/secondary_color"
+            android:textSize="12dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/transparent"
+            android:text=""
+            android:id="@+id/future_activity_array_index"
+            android:layout_above="@+id/future_activity_instructor"
+            android:layout_alignStart="@+id/future_activity_workout_image"/>
+
+    </RelativeLayout>
+</LinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/action_bar_container"
+    android:layout_width="fill_parent"
+    android:layout_height="40dp"
+    android:elevation="6dp"
+    android:background="@color/white">
+
+    <LinearLayout
+      android:id="@+id/action_bar_layout"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent"
+      android:gravity="fill_horizontal|center_vertical"
+      android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/action_bar_logo_settings"
+            android:src="@drawable/meny_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:scaleType="centerInside"
+            android:layout_weight="0.03"
+            android:clickable="true"
+            android:cropToPadding="true"
+            android:layout_marginLeft="-10dp"/>
+
+        <ImageView
+            android:id="@+id/action_bar_logo_sats"
+            android:gravity="left"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+
+            android:src="@drawable/sats_logo"
+            android:layout_margin="0dp"
+            android:layout_weight="0.1"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/action_bar_text_training"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:layout_toRightOf="@+id/logo_image"
+            android:text="MIN TRÄNING"
+            android:textColor="#000"
+            android:layout_weight="0.77"/>
+
+        <ImageView
+            android:id="@+id/action_bar_logo_refresh"
+            android:src="@drawable/refresh_icon"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_weight="0.10" />
+    </LinearLayout>
+</android.support.v7.widget.Toolbar>

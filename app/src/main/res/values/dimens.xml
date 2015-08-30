@@ -1,0 +1,20 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--weekList -->
+    <dimen name="height_of_top_rectangle">6dp</dimen>
+    <dimen name="margin_pink_marker_left">0dp</dimen>
+    <dimen name="stroke_width">1dp</dimen>
+    <dimen name="circle_width">5dp</dimen>
+    <dimen name="height_of_bottom_rectangle">30dp</dimen>
+    <dimen name="size_of_text">12dp</dimen>
+    <dimen name="circle_size">13dp</dimen>
+    <dimen name="pink_marker_size">20dp</dimen>
+    <dimen name="pink_marker_left_size">25dp</dimen>
+    <dimen name="shadow_size">26dp</dimen>
+    <dimen name="stickylist_vertical_padding">12dp</dimen>
+    <dimen name="stickylist_horizontal_padding">12dp</dimen>
+
+</resources>

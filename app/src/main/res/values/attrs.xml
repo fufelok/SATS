@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="CustomCircleDraw">
+    <attr name="drawCircle" format="boolean" />
+        <attr name="typeOfCircle" format="enum">
+            <enum name="fill" value="0"/>
+            <enum name="empty" value="1"/>
+        </attr>
+    </declare-styleable>
+</resources>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Leanbit Sats</string>
+    <string name="map_action_name">Map</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_booked">BookedActivity</string>
+    <string name="title_web_activity">HITTA CENTER</string>
+</resources>
